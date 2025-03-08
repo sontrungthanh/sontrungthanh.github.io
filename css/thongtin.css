@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media only screen and (min-width: 768px){#leff{width: 48.75%; float:left; }
+#centef{ width:49.75%;  float:none}
+#thongtin { width:100%; height:450px;}
+#hinhdt{ display:none;}
+			}
+@media only screen and (max-width: 768px){ 
+#hinhmt{ display:none}
+#thongtin { width:100%; }
+#leff{ width:100%; }
+#centef{ width:100%; }
+ }
+#leff { float:left; margin-left:1%; margin-top:5px; }
+#centef{ float:right; margin-top:5px;}
+
+	
+#phongto {
+transition: all 1s ease;
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+}
+ 
+#phongto:hover {
+transform: scale(1.5,1.5);
+-webkit-transform: scale(1.5,1.5);
+-moz-transform: scale(1.5,1.5);
+-o-transform: scale(1.5,1.5);
+-ms-transform: scale(1.5,1.5);
+}

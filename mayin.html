@@ -1,0 +1,912 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MK computer</title>
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/respond.min.js"></script>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryCollapsiblePanel.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+body{
+	background: #3F9;	margin: 0;padding: 0;color: #444;font-family: 'Noto Sans', sans-serif;font-size: 15px;text-align: center;
+	line-height: 1.5em;	display: block}
+@media only screen and (max-width: 768px){.topmenu { display: none;}}
+.topmenu { background:#00F; height:55px; color:#FFF; width: 100%;}
+.topmenu a {color:#FFF; font-size:17px; float:right; margin-top: 15px; text-decoration:none; margin-right: 20px;}
+.topmenu a:hover{ color:#0F0}
+.topmenu p{ font-size:24px;margin-right: 30px; margin-bottom: 30px;}
+<!-- nút tìm kiếm -->
+#demo-2 input[type=search] {width: 15px;color: transparent;cursor: pointer;}
+#demo-2 input[type=search]:hover {    background-color: #fff;}
+#demo-2 input[type=search]:focus {    width: 320PX;    padding-left: 32px;color: #00F;background-color: #33ff99 ;cursor: auto;}
+#demo-2 input:-moz-placeholder {    color: transparent;}
+#demo-2 input::-webkit-input-placeholder {    color: transparent;}
+input[type=search] {
+    background: #FFF url(images/search-icon1.png) no-repeat 9px center;border: solid 1px #016fbe;padding: 9px 8px 9px 25px;
+    width: 3px; margin-left: 10px;margin-top: 12PX;float: LEFT;-webkit-border-radius: 10em;-moz-border-radius: 10em;border-radius: 10em;
+    -webkit-transition: all .5s;-moz-transition: all .5s;transition: all .5s;}
+input[type=search]:focus {width: 130px;background-color: #fff;-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);-moz-box-shadow: 0 0 5px rgba(109,207,246,.5); box-shadow: 0 0 5px rgba(109,207,246,.5);}
+input:-moz-placeholder {    color: #016fbe;}
+input::-webkit-input-placeholder {    color: #999;}
+<!-- end nút tìm kiếm -->
+<!-- logo-->
+.main{position: relative;background:#fff;max-width:1010px;margin:20px auto;padding:20px;overflow: hidden;border: 1px solid rgba(0,0,0,0.1);}
+.logo{margin-top: 10px;}
+<!--end logo-->
+</style>
+<style>
+.left{background: #FFF;height: 85px;float: left;width: 20%;position:relative; }
+.right{background: #FFF;height: 85px;float: right;width: 80%;}
+@media only screen and (max-width: 768px){.left, .right{ width: 100%;  }}
+        </style>
+        <!--hình nền cty-->
+                <style type="text/css">
+				.hinhnen{ margin-top:30px}				
+				.letter {position: relative; margin-left: 2px;color:#F00;font-size: 25PX;font-weight:bold;font-family:"Times New Roman", Times, serif; top: -webkit-calc(50% - 45px); top: calc(50% - 45px); text-shadow: 0px 0px 3px white;}
+.letter:nth-child(1) {-webkit-animation: fade 4s infinite 200ms;   animation: fade 4s infinite 200ms;}
+.letter:nth-child(2) {-webkit-animation: fade 4s infinite 400ms;        animation: fade 4s infinite 400ms; }
+.letter:nth-child(3) {        -webkit-animation: fade 4s infinite 600ms;        animation: fade 4s infinite 600ms; }
+.letter:nth-child(4) {        -webkit-animation: fade 4s infinite 800ms;        animation: fade 4s infinite 800ms;}
+.letter:nth-child(5) {        -webkit-animation: fade 4s infinite 1000ms;        animation: fade 4s infinite 1000ms;}
+.letter:nth-child(6) {        -webkit-animation: fade 4s infinite 1200ms;        animation: fade 4s infinite 1200ms;}
+.letter:nth-child(7) {        -webkit-animation: fade 4s infinite 1400ms;        animation: fade 4s infinite 1400ms;} 
+.letter:nth-child(8) {        -webkit-animation: fade 4s infinite 1600ms;        animation: fade 4s infinite 1600ms;} 
+ @-webkit-keyframes fade {        50% {      opacity: 0.02;   }}
+ @keyframes fade {        50% { opacity: 0.02;  }}
+</style> <!--end hình nền cty-->
+ <!--menu ngang--> <style type="text/css">
+ nav {font-size: 15px;background-color: #00F;box-shadow: 0 1px 2px rgba(19, 51, 61, 0.5);padding: 0 1em;height: 44px; /* Menu height */
+	overflow: hidden; /* Don't show anything outside the nav */}
+nav ul {margin: 0;padding: 0;list-style-type: none;	max-height: 88px; /* Menu height x 2 */
+	position: relative; /* Position the menu button relative to this item */}
+nav li {display: inline-block;}
+nav a {display: inline-block;padding: 0 1em;color: rgb(236, 236, 236);font-weight: 700;letter-spacing: 0.1em;text-decoration: none;
+	text-transform: uppercase;white-space: nowrap;line-height: 44px; /* Menu height */height: 44px; /* Menu height */}
+nav a:hover {background-color: rgba(255, 255, 255, 0.08);}
+nav li:last-child { /* The menu button */
+	position: absolute; /* Move the menu button out of flow */
+	right: 0;	bottom: 44px; /* Move upwards, the same distance as the menu height */
+	background-image: linear-gradient(to right, rgba(255, 0, 0) 0, rgba(255, 0, 0) 2em);}
+nav li:nth-last-child(2) { /* The close button */	display: none;}
+nav#menu:target {	height: auto;}
+nav#menu:target ul {	max-height: none;}
+nav#menu:target li {	display: block;}
+nav#menu:target a {display: block;padding: 0 2em;background-color: rgba(255, 255, 255, 0.05);}
+nav#menu:target a:hover {background-color: #3f9;}
+nav#menu:target li:not(:first-child) {	margin-top: 2px;}
+nav#menu:target li:last-child {	display: none;}
+nav#menu:target li:nth-last-child(2) {display: inline-block;position: absolute;top: 0;right: 0;margin: 0;
+border-left: 2px solid rgb(19, 51, 61);}
+</style>  <!--end menu ngang-->
+                 <!--CỐ DỊNH MENU-->
+      <style type="text/css">
+	 #backtotop1 { width: 100%; display:none; position: fixed; z-index:100; top: 0px; left: 0PX; float:left; cursor: pointer; text-align:center; font-weight: bold; }
+	 #backtotop1 a{ color:#fff;}
+	 #backtotop1 ul li a:hover { background:#3f9; color:#F00;}
+	 #backtotop1 { background:#3f9;}
+	 </style>
+     <script type="text/javascript">
+	 $(document).ready(function($) {   
+  //selector đến menu cần làm việc
+  var TopFixMenu = $("#backtotop1");
+  // dùng sự kiện cuộn chuột để bắt thông tin đã cuộn được chiều dài là bao nhiêu.
+    $(window).scroll(function(){
+    // Nếu cuộn được hơn 150px rồi
+        if($(this).scrollTop()>380){
+      // Tiến hành show menu ra   
+        TopFixMenu.show();
+        }else{
+      // Ngược lại, nhỏ hơn 150px thì hide menu đi.
+            TopFixMenu.hide();
+        }}
+    )
+})
+	 </script>
+     <!-- END CỐ DỊNH MENU-->
+   <!--đầu trang về đầu trang-->
+     <style type="text/css">
+	 #backtotop { width: 30px; height: 30px; display: none; background:#11d445; opacity:0.8; border-radius: 50%; position: fixed; z-index:1000; bottom: 30px; right: 30px; cursor: pointer; text-align:center; font-weight: bold; }
+	 </style>
+     <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css">
+     <link href="SpryAssets/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css">
+     <link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css">
+     <script type="text/javascript"> $(document).ready(function() { $('body').append('<div id="backtotop"><img src="../MK/images/top-arrow2.png" alt="Top" border="0"/></div>'); $(window).scroll(function() { if($(window).scrollTop() >150) { $('#backtotop').fadeIn(); } else { $('#backtotop').fadeOut(); } }); $('#backtotop').click(function() { $('html, body').animate({scrollTop:0},500); }); });</script><!--end về đầu trang-->       
+    <!-- gọi điện thoại-->
+<div class="hotline-phone-ring-wrap"> <a href="https://zalo.me/+84985654786" target="_blank"> <img src="../MK/images/zalo1.jpg" alt="Zalo" width="40"></a><br /> <br /><br />
+	<div class="hotline-phone-ring"> 
+		<div class="hotline-phone-ring-circle"></div>
+		<div class="hotline-phone-ring-circle-fill"></div> 
+		<div class="hotline-phone-ring-img-circle">
+		<a href="tel:0399756542" class="pps-btn-img">
+			<img src="../MK/images/icon-call-nh.png" alt="Gọi điện thoại" width="50">
+		</a>
+		</div>
+	</div> 
+	<div class="hotline-bar">
+		<a href="tel:0399756542">
+			<span class="text-hotline">0399.756.542</span>
+		</a>
+	</div>
+</div>
+<style type="text/css">
+.hotline-phone-ring-wrap {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999999;
+}
+.hotline-phone-ring {
+  position: relative;
+  visibility: visible;
+  background-color: transparent;
+  width: 110px;
+  height: 110px;
+  cursor: pointer;
+  z-index: 11;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transition: visibility .5s;
+  left: 0;
+  bottom: 0;
+  display: block;
+}
+.hotline-phone-ring-circle {
+	width: 85px;
+  height: 85px;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 100%;
+  border: 2px solid #e60808;
+  -webkit-animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+  animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+  transition: all .5s;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  opacity: 0.5;
+}
+.hotline-phone-ring-circle-fill {
+	width: 55px;
+  height: 55px;
+  top: 25px;
+  left: 25px;
+  position: absolute;
+  background-color: rgba(230, 8, 8, 0.7);
+  border-radius: 100%;
+  border: 2px solid transparent;
+  -webkit-animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+  animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+  transition: all .5s;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+.hotline-phone-ring-img-circle {
+	background-color: #e60808;
+	width: 33px;
+  height: 33px;
+  top: 37px;
+  left: 37px;
+  position: absolute;
+  background-size: 20px;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+  animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hotline-phone-ring-img-circle .pps-btn-img {
+	display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.hotline-phone-ring-img-circle .pps-btn-img img {
+	width: 20px;
+	height: 20px;
+}
+.hotline-bar {
+  position: absolute;
+  background: rgba(230, 8, 8, 0.75);
+  height: 40px;
+ 
+  line-height: 40px;
+  border-radius: 3px;
+  padding: 0 10px;
+  background-size: 100%;
+  cursor: pointer;
+  transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  z-index: 9;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 50px !important;
+  /* width: 175px !important; */
+  left: 33px;
+  bottom: 37px;
+}
+.hotline-bar > a {
+  color: #00F;
+  text-decoration: none;
+  font-size: 15px;
+  margin-right:5px;
+  font-weight: bold;
+  text-indent: 50px;
+  display: block;
+  letter-spacing: 1px;
+  line-height: 40px;
+  font-family: Arial;
+}
+.hotline-bar > a:hover,
+.hotline-bar > a:active {
+  color: #fff;
+}
+@-webkit-keyframes phonering-alo-circle-anim {
+  0% {
+    -webkit-transform: rotate(0) scale(0.5) skew(1deg);
+    -webkit-opacity: 0.1;
+  }
+  30% {
+    -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+    -webkit-opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    -webkit-opacity: 0.1;
+  }
+}
+@-webkit-keyframes phonering-alo-circle-fill-anim {
+  0% {
+    -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+    opacity: 0.6;
+  }
+  50% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+    opacity: 0.6;
+  }
+}
+@-webkit-keyframes phonering-alo-circle-img-anim {
+  0% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+  }
+  10% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  20% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  30% {
+    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+  40% {
+    -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+  }
+  50% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1) skew(1deg);
+  }
+}
+@media (max-width: 768px) {
+  .hotline-bar {
+    display: none;
+  }
+}
+</style>
+    <!--end gọi điện thoại-->
+    <!--noi dung-->
+    <script type="text/javascript">
+    $('.scroll').on("click", function(e) {
+
+  e.preventDefault();
+  
+  var dest = $(this).attr("href");
+  
+  $("html, body").animate({
+  
+    'scrollTop':   $(dest).offset().top
+    
+  }, 2000);
+  
+});
+    </script>
+    <style>
+	#j{
+ background:yellow;
+}            #left{
+                background: #ffF;
+				height: 210px;margin-top: 0.5%;
+                float: left;
+                width: 33%;
+				position:relative;
+            }
+			#center { background:#fff; height: 210px; margin-top: 0.5%;float:left; margin-left: 0.5%;
+				width: 33%;}
+            #right{
+				height: 210px;
+                background: #fff; margin-top:0.5%;
+                float: right;
+                width: 33%;				
+            }
+			#left1{
+                background: #ffF;
+				height: 210px;margin-top: 0.5%;
+                float: left;
+                width: 33%;
+				position:relative;
+            }
+			#center1 { background:#fff; height: 210px; margin-top: 0.5%;float:left; margin-left: 0.5%;
+				width: 33%;}
+            #right1{
+				height: 210px;
+                background: #fff; margin-top:0.5%;
+                float: right;
+                width: 33%;				
+            }
+			#leftfooter{
+                background: #06F;
+				height: 170px;margin-top: 0.5%;
+                float: left;
+                width: 33%;
+				position:relative;
+            }
+			#centerfooter { background:#06f; height:170px; margin-top: 0.5%;float:left; margin-left: 0.5%;
+				width: 33%;}
+            #rightfooter{
+				height: 170px;
+                background: #06f; margin-top:0.5%;
+                float: right;
+                width: 33%;				
+            }
+			#tieude{ width: 100%; height: 50px; background:#39F; color: #0F0; margin-top: 0.5%;}
+			#tieude2{height: 50px; width: 100%; color:#0f0; background:#39f; float:left;  margin-top: 0.5%;}
+			#tieude3{height: 50px; font-size: 20px; width: 100%; color:#0f0; background:#39f; float:left;  margin-top: 0.5%;}
+			#tieudefooter{height: 30px; font-size: 15px; width: 100%; padding-top: 5px; color:#0f0; background:#39f; float:left;  margin-top: 0.5%;}
+			#tieude2 p{ font-size: 20PX;}
+             @media only screen and (max-width: 768px){
+    #left, #left1,#right1,#center1, #right, #center, #tieude2, #tieude3, #tieude, #leftfooter,#rightfooter,#centerfooter {
+        float: none;
+		margin-top: 5px;
+		margin-left: 1%;
+        width: 98%;
+    }
+	#tieude2, #tieude3, #tieude{ background:none; color:#F00}
+	}
+        </style>
+        <!--end noi dung-->    
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div id="LayoutDiv1">
+      <div class="topmenu">
+      <a href="index.html" target="_self"> Trang chủ </a>
+      <a href="lienhe.html" target="_self"> Giới thiệu </a>
+      <a>Chào mừng bạn đến với MK Computer</a>
+       <form id="demo-2">
+         <input type="search" placeholder="Search">
+       </form>
+          </div>
+      <!--end topmenu-->
+      <div class="main">
+      	  <div class="logo">
+          <div class="left">
+                <a href="index.html" target="_self"><img alt="MK Computer" height="75px;" width="80px;" src="../MK/images/logo_mk.png" style="margin-top:5px"></a>
+            </div>
+            <div class="right">
+                <div class="hinhnen">
+                		<span class='letter'>CHUYÊN</span>
+						<span class='letter'>CUNG</span>
+                        <span class='letter'>CẤP</span>
+                        <span class='letter'>CAMERA,</span>
+                        <span class='letter'>MÁY</span>
+                        <span class='letter'>TÍNH,</span>
+                        <span class='letter'>MÁY</span>
+                        <span class='letter'>IN</span>
+                </div> <!-- end hình nền cty-->
+            </div> <!-- end RIGHT-->
+          </div> <!--end logo-->
+         <!--menu ngang--> 
+          <nav id="menu">
+	<ul id="menu-closed">
+		<li><a href="index.html" target="_self">Trang chủ</a></li>
+		<li><a href="camera.html" target="_self">Camera</a></li>
+        <li><a href="maytinh.html" target="_self">Máy tính</a></li>
+		<li><a href="mayin.html" target="_self">Máy in</a></li>
+		<li><a href="thietbimang.html" target="_self">Thiết bị mạng</a></li>
+		<li><a href="huongdan.html" target="_self">Hướng dẫn</a></li>
+		<li><a href="lienhe.html" target="_self">Liên hệ</a></li>
+		<li><a href="#menu-closed">&#215;</a></li>
+		<li><a href="#menu">&#9776; Menu</a></li>
+	</ul>
+</nav> <!--end menu ngang--> 
+<!--cố định menu ngang--> 
+         <div id='backtotop1'>
+          <nav id="menu">
+	<ul id="menu-closed">
+		<li><a href="index.html" target="_self">Trang chủ</a></li>
+		<li><a href="camera.html" target="_self">Camera</a></li>
+        <li><a href="maytinh.html" target="_self">Máy tính</a></li>
+		<li><a href="mayin.html" target="_self">Máy in</a></li>
+		<li><a href="thietbimang.html" target="_self">Thiết bị mạng</a></li>
+		<li><a href="huongdan.html" target="_self">Hướng dẫn</a></li>
+		<li><a href="lienhe.html" target="_self">Liên hệ</a></li>
+		<li><a href="#menu-closed">&#215;</a></li>
+		<li><a href="#menu">&#9776; Menu</a></li>
+	</ul>
+</nav>
+</div> <!--cố định menu ngang--> 
+  <div class="noidung">
+  
+  	<div id="tieude">
+    <p style="font-size:20px; padding-top: 10px;">TRỌN BỘ CAMERA</p>
+    </div><!--end tieude-->
+  	<div id="left">
+            
+      <div id="TabbedPanels1" class="TabbedPanels">
+        <ul class="TabbedPanelsTabGroup">
+          <li class="TabbedPanelsTab" tabindex="0">gạch terrazzo 1</li>
+          <li class="TabbedPanelsTabSelected" tabindex="0">mAY MOC 2</li>
+          <li class="TabbedPanelsTab" tabindex="0">Tab 3</li>
+        </ul>
+        <div class="TabbedPanelsContentGroup">
+          <div class="TabbedPanelsContent">CoTƯEEE</div>
+          <div class="TabbedPanelsContent">Content 2</div>
+          <div class="TabbedPanelsContent">Content 3</div>
+        </div>
+      </div>
+    </div><!--end left-->
+           <div id="center">
+<a id="j" href='#j'>asd</a>
+             </div><!--end center-->
+            <div id="right">
+            <a id="j" class="scroll" href="#j">Bottom</a>
+            </div><!--end right-->
+            <div id="left1">
+              <div id="CollapsiblePanel2" class="CollapsiblePanel">
+<div id="CollapsiblePanel3" class="CollapsiblePanel">
+  <div class="CollapsiblePanelTab" tabindex="0">Tab</div>
+  <div class="CollapsiblePanelContent">Content</div>
+</div>
+<div id="CollapsiblePanel4" class="CollapsiblePanel">
+  <div class="CollapsiblePanelTab" tabindex="0">Tab</div>
+  <div class="CollapsiblePanelContent">Content</div>
+</div>
+<div class="CollapsiblePanelTab" tabindex="0">Tab</div>
+                <div class="CollapsiblePanelContent">Content</div>
+              </div>
+           </div><!--end left-->
+           <div id="center1">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.347195962093!2d106.19241091266994!3d10.070611174582716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a00d1d192de3c5%3A0xfa6191d6892a1114!2zQ1RZIFROSEggTVRWIFTGsCB24bqlbiBUaW4gaOG7jWMgTWluaCBLaOG6o2k!5e0!3m2!1svi!2s!4v1626701700645!5m2!1svi!2s" width="100%" height="210" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+           </div><!--end center-->
+            
+            <div id="tieude2">
+    <p>ĐẦU GHI HÌNH</p>
+    </div><!--end tieude-->
+  	<div id="left">
+     </div><!--end left-->
+           <div id="center">
+           
+           </div><!--end center-->
+            <div id="right">
+            </div><!--end right-->
+            <div id="left1">
+            
+                
+       
+           </div><!--end left-->
+           <div id="center1">
+           
+           </div><!--end center-->
+            <div id="right1">
+            </div><!--end right-->
+            
+            <div id="tieude3">
+    <p>CAMERA</p>
+    </div><!--end tieude-->
+  	<div id="left">
+           
+
+                
+       
+           </div><!--end left-->
+           <div id="center">
+           
+           </div><!--end center-->
+            <div id="right">
+            </div><!--end right-->
+            <div id="left1">
+            
+                
+       
+           </div><!--end left-->
+           <div id="center1">
+           
+           </div><!--end center-->
+            <div id="right1">
+      
+            </div><!--end right-->
+            
+            <!--thông số kỹ thuật-->
+        <div id="thongso">      
+  <section class="tabb">
+    <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
+    <label for="tab-1" class="tab-label-1">Mô tả sản phẩm</label>
+      
+    <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+    <label for="tab-2" class="tab-label-2">Thông số kỹ thuật</label>
+      
+    <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+    <label for="tab-3" class="tab-label-3">Liên hệ</label>
+      
+    <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+    <label for="tab-4" class="tab-label-4">Nhận xét</label>
+              
+    <div class="clear-shadow"></div>
+                  
+    <div class="tabcontent">
+        <div class="content-1">
+            
+                        <p>nội dung chi tiết 1</p>
+            <h3>How we work</h3>
+            <p>noi dung chi tiet 2</p>
+        </div>
+        <div class="content-2">
+            <h2>Thông số kỹ thuật</h2>
+                        <p>noi dung thong số kỹ thuật 1</p>
+            <h3>Excellence</h3>
+            <p>noi dung thong số kỹ thuật 2</p>
+        </div>
+        <div class="content-3">
+            <p>noi dung liên hệ</p>
+        </div>
+        <div class="content-4">
+            <p>noi dung nhận xét</p>
+        </div>
+    </div>
+</section>
+</div> <!-- end thông số kỹ thuật-->
+            
+  </div><!--end noidung-->    	
+         <BR /><script type="text/javascript">
+         function ScrollTo(name) {
+  //init thread
+  ScrollToResolver(document.getElementById(name));
+}
+
+function ScrollToResolver(elem) {
+  var jump = parseInt(elem.getBoundingClientRect().top * .2);
+  document.body.scrollTop += jump;
+  document.documentElement.scrollTop += jump;
+  //lastjump detects anchor unreachable, also manual scrolling to cancel animation if scroll > jump
+  if (!elem.lastjump || elem.lastjump > Math.abs(jump)) {
+    elem.lastjump = Math.abs(jump);
+    setTimeout(function() {
+      ScrollToResolver(elem);
+    }, "100");
+  } else {
+    elem.lastjump = null;
+  }
+}
+         </script>
+         <BR />
+         <BR />
+         <BR />
+         <BR /><style>
+		 #thongso { width:67%;
+		 background:#0CF;
+		 float:left;
+		 }
+         .tabb {
+    position: relative;
+  margin: 40px auto;
+  width: 100%;
+}
+
+.tabb input {
+  position: absolute;
+  z-index: 1000;
+  line-height:1.5;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  cursor: pointer;
+}
+.tabb input#tab-2{
+  left: 100px;
+}
+.tabb input#tab-3{
+  left: 200px;
+}
+.tabb input#tab-4{
+  left: 280px;
+}
+
+.tabb label {
+  background: #06f;
+  background: -moz-linear-gradient(top, #06f 0%, #fff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#06f), color-stop(100%,#fff));
+  background: -webkit-linear-gradient(top, #06f 0%,#fff 100%);
+  background: -o-linear-gradient(top, #06f 0%,#fff 100%);
+  background: -ms-linear-gradient(top, #06f 0%,#fff 100%);
+  background: linear-gradient(top, #06f 0%,#fff 100%);
+  font-size: 15px;
+  line-height: 40px;
+  height: 40px;
+  position: relative;
+  padding: 0 20px;
+    float: left;
+  display: block;
+  color: #FF0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.3);
+    border-radius: 3px 3px 0 0;
+    box-shadow: 2px 0 2px rgba(0,0,0,0.1), -2px 0 2px rgba(0,0,0,0.1);
+}
+
+.tabb label:after {
+    content: '';
+  background: #fff;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  display: block;
+}
+
+.tabb input:hover + label {
+  background: #f00;
+}
+
+.tabb label:first-of-type {
+    z-index: 4;
+    box-shadow: 2px 0 2px rgba(0,0,0,0.1);
+}
+
+.tab-label-2 {
+    z-index: 3;
+}
+
+.tab-label-3 {
+    z-index: 2;
+}
+
+.tab-label-4 {
+    z-index: 1;
+}
+
+.tabb input:checked + label {
+    background: #06f; color:#fff;  z-index: 6;
+}
+
+.clear-shadow {
+  clear: both;
+}
+
+.tabcontent {
+    background: #fff;
+  position: relative;
+    width: 100%;
+  height: 370px;
+  z-index: 5;
+    box-shadow: 0 -2px 3px -2px rgba(0,0,0,0.2), 0 2px 2px rgba(0,0,0,0.1);
+    border-radius: 0 3px 3px 3px;
+}
+
+.tabcontent div {
+    position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 40px;
+  z-index: 1;
+    opacity: 0;
+
+    -webkit-transition: opacity linear 0.1s;
+    -moz-transition: opacity linear 0.1s;
+    -o-transition: opacity linear 0.1s;
+    -ms-transition: opacity linear 0.1s;
+    transition: opacity linear 0.1s;
+}
+
+.tabb input.tab-selector-1:checked ~ .tabcontent .content-1,
+.tabb input.tab-selector-2:checked ~ .tabcontent .content-2,
+.tabb input.tab-selector-3:checked ~ .tabcontent .content-3,
+.tabb input.tab-selector-4:checked ~ .tabcontent .content-4 {
+  z-index: 100;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+
+    -webkit-transition: opacity ease-out 0.2s 0.1s;
+    -moz-transition: opacity ease-out 0.2s 0.1s;
+    -o-transition: opacity ease-out 0.2s 0.1s;
+    -ms-transition: opacity ease-out 0.2s 0.1s;
+    transition: opacity ease-out 0.2s 0.1s;
+}
+.tabcontent div h2,
+.tabcontent div h3{
+  color: #398080;
+}
+.tabcontent div p {
+  font-size: 14px;
+  line-height: 22px;
+  font-style: italic;
+  text-align: left;
+  margin: 0;
+  color: #777;
+  padding-left: 15px;
+  font-family: Cambria, Georgia, serif;
+  border-left: 8px solid rgba(63,148,148, 0.1);
+}
+
+
+
+Resources
+         </style>
+         <BR />
+        
+         <BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR /> <BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR /><BR />
+         <BR /><BR />
+         <BR /> <BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR /><BR />
+         <BR /><BR />
+         <BR /> <BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR /><BR />
+         <BR /><BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR /><BR />
+         <BR /><BR />
+         <BR />
+         <BR /><BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR />
+         <BR />
+     <!--footer-->
+         <style type="text/css">
+	 					 @media only screen and (max-width: 768px){ #footer1 { padding-top:10px;} }
+	 					#footer1{width: 90%; margin-left: 5%; margin-top: 10px; font-size:20px; color:#3f9;}
+						#footer2{}
+						#footer3{ background:#FFF; width: 90%; margin-left: 5%; border-radius: 3px }
+						#footer3 ul li:hover{ color:#F00}
+						#footer3 a{ color:#00F; text-decoration:none; text-align:left;}
+						#footer3 a:hover{ color:#F00}
+	 				  </style>
+            <div id="leftfooter">
+            	<div id="footer1"> GIỚI THIỆU
+                </div>
+                <div id="footer2"><hr  width="100%" color="#3f9" align="center" />
+                </div>
+                <div id="footer3">
+                	 <ul style="list-style-type:none; padding:0px;  color:#00F">
+                          <li>
+                        <a href="index.html" target="_self" title="MK Computer">CTY TNHH MTV Tư Vấn Tin Học Minh Khải</a>
+                        </li>
+                          <li>
+                        Địa chỉ: Xã Trung Thành, Huyện Vũng Liêm, Tỉnh Vĩnh Long
+                        </li>
+                      </ul>
+                </div>       
+           </div><!--end leftfooter-->
+           <div id="centerfooter">
+           		<div id="footer1"> LIÊN HỆ ĐẶT HÀNG
+                </div>
+                <div id="footer2"><hr  width="100%" color="#3f9" align="center" />
+                </div>
+                <div id="footer3">
+                	 <ul style="list-style-type:none; text-align:left; margin-left: 6%; padding:0px; font-size:16px; color:#00F">
+                        <li>
+                        Chuyên cung cấp máy tính, máy in, lắp đặt hệ thống camera quan sát. Quý khách vui lòng liên hệ để được tư vấn
+                        </li>
+                         <li>
+                        <a href="tel:0399 756 542" style="font-size: 25px; color:red">ĐT: 0399 756 542</a>
+                        </li>
+                      </ul>
+                </div> 
+           </div><!--end centerfooter-->
+            <div id="rightfooter">
+            	<div id="footer1"> GÓP Ý
+                </div>
+                <div id="footer2"><hr  width="100%" color="#3f9" align="center" />
+                </div>
+                <div id="footer3">
+                	 <ul style="list-style-type:none; text-align:left; margin-left: 6%; padding:0px; font-size:16px;  color:#00F">
+                        <li>
+                        Mọi thông tin góp ý quý khách vui lòng gửi email về địa chỉ:
+                        </li>
+                         <li style="font-size:18px">
+                        <a href="mailto:ctytnhhminhkhai@gmail.com">ctytnhhminhkhai@gmail.com</a>
+                        </li>
+                      </ul>
+                </div> 
+            </div><!--end rightfooter-->
+            <div id="tieudefooter">
+   Copyright &#169; <a href="index.html" target="_self"  style="text-decoration:none" title="MK Computer"> MK Computer </a>  - Editor by <a href='index.html' style="text-decoration:none" target='_self' title='MK Computer'>MK Computer</a>
+    </div><!--end tieudefooter-->          	
+      <!--end footer-->      
+      </div><!--end main-->
+      
+        
+   </div><!--end LayoutDiv1-->
+</div> <!--end gridContainer clearfix-->
+
+    
+</body>
+</html>

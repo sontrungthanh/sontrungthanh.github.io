@@ -1,0 +1,556 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MK computer</title>
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/respond.min.js"></script>
+<link rel="shortcut icon" href="../MK/images/favicon.ico" />
+<meta name="google-site-verification" content="OI8dfu-E4jdUprPeWLnIHljwN-4cJCnipz58elqaka0" />
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+body{
+	background: #3F9;	margin: 0;padding: 0;color: #444;font-family: 'Noto Sans', sans-serif;font-size: 15px;text-align: center;
+	line-height: 1.5em;	display: block}
+@media only screen and (max-width: 768px){.topmenu { display: none;}}
+.topmenu { background:#00F; height:55px; color:#FFF; width: 100%;}
+.topmenu a {color:#FFF; font-size:17px; float:right; margin-top: 15px; text-decoration:none; margin-right: 20px;}
+.topmenu a:hover{ color:#0F0}
+.topmenu p{ font-size:24px;margin-right: 30px; margin-bottom: 30px;}
+<!-- nút tìm kiếm -->
+#demo-2 input[type=search] {width: 15px;color: transparent;cursor: pointer;}
+#demo-2 input[type=search]:hover {    background-color: #fff;}
+#demo-2 input[type=search]:focus {    width: 320PX;    padding-left: 32px;color: #00F;background-color: #33ff99 ;cursor: auto;}
+#demo-2 input:-moz-placeholder {    color: transparent;}
+#demo-2 input::-webkit-input-placeholder {    color: transparent;}
+input[type=search] {
+    background: #FFF url(images/search-icon1.png) no-repeat 9px center;border: solid 1px #016fbe;padding: 9px 8px 9px 25px;
+    width: 3px; margin-left: 10px;margin-top: 12PX;float: LEFT;-webkit-border-radius: 10em;-moz-border-radius: 10em;border-radius: 10em;    -webkit-transition: all .5s;-moz-transition: all .5s;transition: all .5s;}
+input[type=search]:focus {width: 130px;background-color: #fff;-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);-moz-box-shadow: 0 0 5px rgba(109,207,246,.5); box-shadow: 0 0 5px rgba(109,207,246,.5);}
+input:-moz-placeholder {    color: #016fbe;}
+input::-webkit-input-placeholder {    color: #999;}
+<!-- end nút tìm kiếm -->
+<!-- logo-->
+.main{position: relative;background:#fff;max-width:1010px;margin:20px auto;padding:20px;overflow: hidden;border: 1px solid rgba(0,0,0,0.1);}
+.logo{margin-top: 10px;}
+<!--end logo-->
+</style>
+<style>
+.left{background: #FFF;height: 100px;float: left;width: 20%;position:relative; }
+.right{background: #FFF;height: 100px;float: right;width: 80%;}
+@media only screen and (max-width: 768px){.left, .right{ width: 100%;  }, .right{ height: 100px;}}
+        </style>
+        <!--hình nền cty-->
+                <style type="text/css">
+				.hinhnen{ margin-top:32px}				
+				.letter {position: relative; margin-left: 2px;color:#F00;font-size: 25PX;font-weight:bold;font-family:"Times New Roman", Times, serif; top: -webkit-calc(50% - 45px); top: calc(50% - 45px); text-shadow: 0px 0px 3px white;}
+.letter:nth-child(1) {-webkit-animation: fade 4s infinite 200ms;   animation: fade 4s infinite 200ms;}
+.letter:nth-child(2) {-webkit-animation: fade 4s infinite 400ms;        animation: fade 4s infinite 400ms; }
+.letter:nth-child(3) {        -webkit-animation: fade 4s infinite 600ms;        animation: fade 4s infinite 600ms; }
+.letter:nth-child(4) {        -webkit-animation: fade 4s infinite 800ms;        animation: fade 4s infinite 800ms;}
+.letter:nth-child(5) {        -webkit-animation: fade 4s infinite 1000ms;        animation: fade 4s infinite 1000ms;}
+.letter:nth-child(6) {        -webkit-animation: fade 4s infinite 1200ms;        animation: fade 4s infinite 1200ms;}
+.letter:nth-child(7) {        -webkit-animation: fade 4s infinite 1400ms;        animation: fade 4s infinite 1400ms;} 
+.letter:nth-child(8) {        -webkit-animation: fade 4s infinite 1600ms;        animation: fade 4s infinite 1600ms;} 
+ @-webkit-keyframes fade {        50% {      opacity: 0.02;   }}
+ @keyframes fade {        50% { opacity: 0.02;  }}
+ .letter1 {position: relative; margin-left: 2px;color:#f00;font-size: 20PX;font-weight:bold;font-family:"Times New Roman", Times, serif; top: -webkit-calc(50% - 45px); top: calc(50% - 45px); text-shadow: 0px 0px 3px #009;}
+.letter1:nth-child(1) {-webkit-animation: fade 6s infinite 300ms;   animation: fade 6s infinite 300ms;}
+.letter1:nth-child(2) {-webkit-animation: fade 6s infinite 600ms;        animation: fade 6s infinite 600ms; }
+.letter1:nth-child(3) {        -webkit-animation: fade 6s infinite 900ms;        animation: fade 6s infinite 900ms; }
+.letter1:nth-child(4) {        -webkit-animation: fade 6s infinite 1200ms;        animation: fade 6s infinite 1200ms;}
+.letter1:nth-child(5) {        -webkit-animation: fade 6s infinite 1500ms;        animation: fade 6s infinite 1500ms;}
+.letter1:nth-child(6) {        -webkit-animation: fade 6s infinite 1800ms;        animation: fade 6s infinite 1800ms;}
+.letter1:nth-child(7) {        -webkit-animation: fade 6s infinite 2100ms;        animation: fade 6s infinite 2100ms;} 
+.letter1:nth-child(8) {        -webkit-animation: fade 6s infinite 2400ms;        animation: fade 6s infinite 2400ms;} 
+.letter1:nth-child(9) {        -webkit-animation: fade 6s infinite 2700ms;        animation: fade 6s infinite 2700ms;} 
+.letter1:nth-child(10) {        -webkit-animation: fade 6s infinite 3000ms;        animation: fade 6s infinite 3000ms;} 
+.letter1:nth-child(11) {        -webkit-animation: fade 6s infinite 3300ms;        animation: fade 6s infinite 3300ms;} 
+.letter1:nth-child(12) {        -webkit-animation: fade 6s infinite 3600ms;        animation: fade 6s infinite 3600ms;} 
+.letter1:nth-child(13) {        -webkit-animation: fade 6s infinite 3900ms;        animation: fade 6s infinite 3900ms;} 
+.letter1:nth-child(14) {        -webkit-animation: fade 6s infinite 4200ms;        animation: fade 6s infinite 4200ms;} 
+.letter1:nth-child(15) {        -webkit-animation: fade 6s infinite 4500ms;        animation: fade 6s infinite 4500ms;} 
+.letter1:nth-child(16) {        -webkit-animation: fade 6s infinite 4800ms;        animation: fade 6s infinite 4800ms;} 
+ @-webkit-keyframes fade {        50% {      opacity: 0.02;   }}
+ @keyframes fade {        50% { opacity: 0.02;  }}
+</style> <!--end hình nền cty-->
+    <!--đầu trang về đầu trang-->
+     <style type="text/css">
+	 #backtotop { width: 30px; height: 30px; display: none; background:#11d445; opacity:0.8; border-radius: 50%; position: fixed; z-index:1000; bottom: 50px; right: 40px; cursor: pointer; text-align:center; font-weight: bold; }
+	 </style>
+     <script type="text/javascript"> $(document).ready(function() { $('body').append('<div id="backtotop"><img src="../MK/images/top-arrow2.png" alt="Top" border="0"/></div>'); $(window).scroll(function() { if($(window).scrollTop() >150) { $('#backtotop').fadeIn(); } else { $('#backtotop').fadeOut(); } }); $('#backtotop').click(function() { $('html, body').animate({scrollTop:0},500); }); });</script><!--end về đầu trang-->  
+     <style type="text/css">
+	 #zalo { display:none; position: fixed; z-index:1002; bottom: 90px; left: 31PX; float:left; cursor: pointer; text-align:center; font-weight: bold; }
+	 </style>
+     <div id="zalo">
+     <marquee id="marq1" style="text-align:center" scrollamount="4" direction="up" loop="infinite" scrolldelay="10" height="300px" onmouseover="this.stop()" onmouseout="this.start()">
+     <a href="https://zalo.me/0985654786" target="_blank"> <img src="../MK/images/zalo1.jpg" alt="Zalo" width="50" ></a>
+     </marquee>
+     </div>
+      <!--CỐ DỊNH MENU zalo-->
+ <script type="text/javascript">
+	 $(document).ready(function($) {   
+  //selector đến menu cần làm việc
+  var TopFixMenu = $("#zalo");
+  // dùng sự kiện cuộn chuột để bắt thông tin đã cuộn được chiều dài là bao nhiêu.
+    $(window).scroll(function(){
+    // Nếu cuộn được hơn 150px rồi
+        if($(this).scrollTop()>-10){
+      // Tiến hành show menu ra   
+        TopFixMenu.show();
+        }else{
+      // Ngược lại, nhỏ hơn 150px thì hide menu đi.
+            TopFixMenu.hide();
+        }}
+    )
+})
+	 </script>
+     <!-- END CỐ DỊNH zalo-->          
+    <!-- gọi điện thoại-->
+     <div class="hotline-phone-ring-wrap"> 
+	<div class="hotline-phone-ring"> 
+		<div class="hotline-phone-ring-circle"></div>
+		<div class="hotline-phone-ring-circle-fill"></div> 
+		<div class="hotline-phone-ring-img-circle">
+		<a href="tel:0985654786" class="pps-btn-img">
+			<img src="../MK/images/icon-call-nh.png" alt="Gọi điện thoại" width="50">
+		</a>
+		</div>
+	</div> 
+	<div class="hotline-bar">
+		<a href="tel:0985654786">
+			<span class="text-hotline">0985.654.786</span>
+		</a>
+	</div>
+</div>
+<style type="text/css">
+.hotline-phone-ring-wrap {position: fixed;bottom: 0;left: 0;z-index: 999999;}
+.hotline-phone-ring {position: relative;visibility: visible;background-color: transparent;width: 110px;height: 110px;cursor: pointer;z-index: 11;-webkit-backface-visibility: hidden;-webkit-transform: translateZ(0);transition: visibility .5s;left: 0;
+  bottom: 0;display: block;}
+.hotline-phone-ring-circle {width: 85px;height: 85px;top: 10px;left: 10px;position: absolute;background-color: transparent;
+  border-radius: 100%;border: 2px solid #e60808;
+  -webkit-animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+  animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+  transition: all .5s;-webkit-transform-origin: 50% 50%;-ms-transform-origin: 50% 50%;transform-origin: 50% 50%;opacity: 0.5;}
+.hotline-phone-ring-circle-fill {width: 55px;height: 55px;top: 25px;left: 25px;position: absolute;
+background-color: rgba(230, 8, 8, 0.7);border-radius: 100%;border: 2px solid transparent;
+  -webkit-animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+  animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+  transition: all .5s;-webkit-transform-origin: 50% 50%;-ms-transform-origin: 50% 50%;transform-origin: 50% 50%;}
+.hotline-phone-ring-img-circle {background-color: #e60808;width: 33px;height: 33px;top: 37px;left: 37px;position: absolute;
+  background-size: 20px;border-radius: 100%;border: 2px solid transparent;
+  -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+  animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;-webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;transform-origin: 50% 50%;display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;
+  display: flex;align-items: center;justify-content: center;}
+.hotline-phone-ring-img-circle .pps-btn-img {display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;}
+.hotline-phone-ring-img-circle .pps-btn-img img {width: 20px;height: 20px;}
+.hotline-bar {position: absolute;background: rgba(230, 8, 8, 0.75);height: 40px;line-height: 40px;border-radius: 3px;
+  padding: 0 10px; background-size: 100%;cursor: pointer;transition: all 0.8s;-webkit-transition: all 0.8s;z-index: 9;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);  border-radius: 50px !important;
+  /* width: 175px !important; */
+  left: 33px;  bottom: 37px;}
+.hotline-bar > a {color: #00F;text-decoration: none;font-size: 15px;margin-right:5px;font-weight: bold;text-indent: 50px;
+  display: block;letter-spacing: 1px;line-height: 40px;font-family: Arial;}
+.hotline-bar > a:hover,.hotline-bar > a:active {  color: #fff;}
+@-webkit-keyframes phonering-alo-circle-anim {
+  0% {    -webkit-transform: rotate(0) scale(0.5) skew(1deg);-webkit-opacity: 0.1;  }
+  30% {   -webkit-transform: rotate(0) scale(0.7) skew(1deg);-webkit-opacity: 0.5;  }
+  100% {   -webkit-transform: rotate(0) scale(1) skew(1deg); -webkit-opacity: 0.1;  }}
+@-webkit-keyframes phonering-alo-circle-fill-anim {
+  0% {    -webkit-transform: rotate(0) scale(0.7) skew(1deg);    opacity: 0.6;  }
+  50% {    -webkit-transform: rotate(0) scale(1) skew(1deg);    opacity: 0.6;  }
+  100% {    -webkit-transform: rotate(0) scale(0.7) skew(1deg);    opacity: 0.6;  }}
+@-webkit-keyframes phonering-alo-circle-img-anim {
+  0% {    -webkit-transform: rotate(0) scale(1) skew(1deg);  }
+  10% {    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);  }
+  20% {    -webkit-transform: rotate(25deg) scale(1) skew(1deg);  }
+  30% {    -webkit-transform: rotate(-25deg) scale(1) skew(1deg);  }
+  40% {    -webkit-transform: rotate(25deg) scale(1) skew(1deg);  }
+  50% {    -webkit-transform: rotate(0) scale(1) skew(1deg);  }
+  100% {    -webkit-transform: rotate(0) scale(1) skew(1deg);  }}
+@media (max-width: 768px) {
+  .hotline-bar {    display: none;  }}
+</style>
+    <!--end gọi điện thoại-->
+    <!--menu ngang--> 
+          <style type="text/css">
+	 #menutop { width: 100%; height:30px; background:#00f; float:left; padding-top: 15px;text-align:center; font-weight: bold; font-size: 16px }
+	#menutop li {margin-left: 36px; padding-left: 30px; text-decoration: none; list-style-type: none; float: left;  text-align:center; color:#00F}
+	#menutop a:hover {color:#3f9; }
+	#menutop a{list-style-type: none; text-decoration: none; color:#FFF; margin-top:22px; margin-left: 0px;}
+	 </style> <!--end menu ngang--> 
+    <!--noi dung-->
+    <style>
+            #left{background: #ffF;height: 220px;margin-top: 0.5%;float: left;width: 33%;position:relative;}
+			#center { background:#fff; height: 220px; margin-top: 0.5%;float:left; margin-left: 0.5%;width: 33%;}
+            #right{height: 220px;background: #fff; margin-top:0.5%;float: right;width: 33%;		}
+			#left1{background: #ffF;height: 238px;margin-top: 0.5%;float: left;width: 33%;position:relative;}
+			#center1 { background:#fff; height: 238px; margin-top: 0.5%;float:left; margin-left: 0.5%;width: 33%;}
+            #right1{height: 238px;background: #fff; margin-top:0.5%;float: right;width: 33%;	}
+			#leftfooter{background: #06F;height: 170px;margin-top: 0.5%;float: left;width: 33%;position:relative;}
+			#centerfooter { background:#06f; height:170px; margin-top: 0.5%;float:left; margin-left: 0.5%;width: 33%;}
+            #rightfooter{height: 170px;background: #06f; margin-top:0.5%;float: right;width: 33%;	}
+			#tieude{ width: 100%; height: 50px; background:#39F; color: #0F0; margin-top: 0.5%;}
+			#tieude2{height: 50px; width: 100%; color:#0f0; background:#39f; float:left;  margin-top: 0.5%;}
+			#tieude3{height: 50px; font-size: 20px; width: 100%; color:#0f0; background:#39f; float:left;  margin-top: 0.5%;}
+			#tieude4{height: 245px; font-size: 20px; width: 100%; color:#0f0;float:left;  margin-top: 0.5%;}
+			#tieudefooter{height: 30px; font-size: 15px; width: 100%; padding-top: 5px; color:#0f0; background:#39f; float:left;  margin-top: 0.5%;}
+			#tieude2 p{ font-size: 20PX;}
+			@media only screen and (min-width: 768px){#tabnoidung { height:522px; float:left } #andong1{ display:none} #andong{ display:none}}
+             @media only screen and (max-width: 768px){
+				 #tabnoidung { height: 1232px}
+    #left, #left1,#right1,#center1, #right, #center, #tieude2, #tieude3, #tieude, #leftfooter,#rightfooter,#centerfooter {
+        float: none;margin-top: 5px;margin-left: 1%;width: 98%;}
+	#tieude4{ width:100%} .dot, .tron{ display: none;}
+	#tieude2, #tieude3, #tieude{ background:none; color:#F00}	
+	#menutop{ display:none}}
+        </style>
+        <!--end noi dung-->    
+        <style> <!--CHẠY HÌNH -->   
+         /* Slideshow container */
+          .slideshow-container {max-width: 90%;position: relative;margin: auto;}
+          /* Ẩn các slider */
+          .mySlides {display: none; margin-top: 15px;}
+          /* định dạng các chấm chuyển đổi các slide */
+		  .dot {cursor:pointer;height: 10px;width: 10px;margin: 0 2px;background-color: #03C;border-radius: 50%;
+            display: inline-block;transition: background-color 0.6s ease;}
+          /* khi được hover, active đổi màu nền */
+          .active, .dot:hover {background-color: #F00; }
+          /* Thêm hiệu ứng khi chuyển đổi các slide */
+          .fade1 {-webkit-animation-name: fade1; -webkit-animation-duration: 3s; animation-name: fade1;animation-duration: 3s;}
+          @-webkit-keyframes fade1 {from {opacity: .4} to {opacity: 1} }
+          @keyframes fade1 {from {opacity: .4} to {opacity: 1}}
+        </style>
+        <!--END CHẠY HÌNH -->    <!--tab nội dung --> 
+         <style type="text/css">
+        div.container {width: 100%;   margin: auto; position:relative; clear:both  }
+        /* định dạng thẻ div chưa các button tab */
+        div.tab { overflow: hidden;  border: 1px solid #ccc; background-color: #39F; }
+        /* định dạng các button tab */
+        div.tab button {background-color: inherit;  float: left; border: none; outline: none;cursor: pointer; padding: 14px 16px; transition: 0.3s;   font-size: 15px; }
+		#tabnoidung {margin-top: 0.5%;width: 99%;}
+        /* đổi màu khi một button tab được hover */
+        div.tab button:hover { background-color: #00F; color:#F00  }
+        /* đổi màu nền cho tab đang được hiển thị nội dung */
+      div.tab button.active {  background-color: #F00; color:#FFF}
+        /* định dạng nội dung hiển thị */
+        .tabcontent {display: none; border-top: none;  position: absolute;}
+    </style>
+    <!-- end tab nội dung -->
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div id="LayoutDiv1">
+      <div class="topmenu">
+      <a href="index.html" target="_self"> Trang chủ </a>
+      <a href="lienhe.html" target="_self"> Giới thiệu </a>
+      <a>Chào mừng bạn đến với MK Computer</a>
+       <form id="demo-2">
+         <input type="search" placeholder="Search">
+       </form>
+          </div>
+      <!--end topmenu-->
+      <div class="main">
+      	  <div class="logo">
+          <div class="left">
+                <a href="index.html" target="_self"><img alt="MK Computer" height="75px;" width="80px;" src="../MK/images/logo_mk.png" style="margin-top:15px"></a>
+            </div>
+            <div class="right">
+                <div class="hinhnen">
+                		<span class='letter'>CHUYÊN</span>
+						<span class='letter'>CUNG</span>
+                        <span class='letter'>CẤP</span>
+                        <span class='letter'>CAMERA,</span>
+                        <span class='letter'>MÁY</span>
+                        <span class='letter'>TÍNH,</span>
+                        <span class='letter'>MÁY</span>
+                        <span class='letter'>IN</span>
+                </div> <!-- end hình nền cty-->
+            </div> <!-- end RIGHT-->
+          </div> <!--end logo-->
+            <!--menu ngang-->
+     <div id="menutop">
+       	      <li><a href="index.html">TRANG CHỦ</a></li>
+              <li><a href="camera.html">CAMERA</a></li>
+              <li><a href="maytinh.html">MÁY TÍNH</a></li>
+              <li><a href="mayin.html">MÁY IN</a></li>
+              <li><a href="thietbimang.html">THIẾT BỊ MẠNG</a></li>
+              <li><a href="huongdan.html">HƯỚNG DẪN</a></li>
+              <li><a href="lienhe.html">LIÊN HỆ</a></li>
+     </div>   <!--end menu ngang--> 
+<!--cố định menu ngang--> <div id='backtotop2'>
+<div class="containermt">
+      <div class="phone">
+        <div class="content">
+         <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            <ul id="menudt">
+              <li><a href="index.html">TRANG CHỦ</a></li>
+              <li><a href="camera.html">CAMERA</a></li>
+              <li><a href="maytinh.html">MÁY TÍNH</a></li>
+              <li><a href="mayin.html">MÁY IN</a></li>
+              <li><a href="thietbimang.html">THIẾT BỊ MẠNG</a></li>
+              <li><a href="huongdan.html">HƯỚNG DẪN</a></li>
+              <li><a href="lienhe.html">LIÊN HỆ</a></li>
+            </ul>
+           </div>
+          </nav>
+        </div>
+       </div>
+    </div>
+    </div>
+    <!--CỐ DỊNH MENU-->
+ <script type="text/javascript">
+	 $(document).ready(function($) {   
+  //selector đến menu cần làm việc
+  var TopFixMenu = $("#backtotop2");
+  // dùng sự kiện cuộn chuột để bắt thông tin đã cuộn được chiều dài là bao nhiêu.
+    $(window).scroll(function(){
+    // Nếu cuộn được hơn 150px rồi
+        if($(this).scrollTop()>150){
+      // Tiến hành show menu ra   
+        TopFixMenu.show();
+        }else{
+      // Ngược lại, nhỏ hơn 150px thì hide menu đi.
+            TopFixMenu.hide();
+        }}
+    )
+})
+	 </script>
+     <!-- END CỐ DỊNH MENU-->
+    <style type="text/css">
+	 #backtotop2 {display:none; position: fixed; z-index:1001; top: 0px; left: 0PX; float:left; cursor: pointer; text-align:center; font-weight: bold; }
+	 #backtotop2 a{ color:#fff;}
+	 #backtotop2 ul li a:hover { background:#3f9; color:#f00;}
+	 #menudt a {text-decoration: none;color: #fff;opacity:1;font-family: 'work sans', sans serif;
+  font-size: 1.5em;font-weight: 400;transition: 200ms;}
+#menudt a:hover {width: 100%; color:#F00;}
+ul {padding: 0; list-style-type: none;}
+.containermt {margin-top: 0px; Display: flex;justify-content: center;align-items: center;}
+.phone { display: flex;width: 100%;height: 80px;justify-content: center;align-items: center;  }
+.content { width: 100%; }
+nav { background-color: #00F; height: 65px; width: 77px;}
+#menuToggle {display: flex;flex-direction: column;position:relative;top: 25px; left: 23px; z-index: 1; -webkit-user-select: none; user-select: none;}
+#menuToggle input {display: flex;width: 65px;height: 77px;position: absolute; margin-left:-20px;cursor: pointer;opacity: 0;z-index: 2;}
+#menuToggle span {display: flex;width: 29px;height: 2px;margin-bottom: 5px;position: relative; background: #FFFFFF;
+  border-radius: 3px;z-index: 1; transform-origin: 5px 0px;  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),              opacity 0.55s ease;}
+#menuToggle span:first-child {transform-origin: 0% 0%;}
+#menuToggle span:nth-last-child(2){transform-origin: 0% 100%;}
+#menuToggle input:checked ~ span{opacity: 1;transform: rotate(45deg) translate(-3px, -1px);background: #F00;}
+#menuToggle input:checked ~ span:nth-last-child(3){opacity: 0;transform: rotate(0deg) scale(0.2, 0.2);}
+#menuToggle input:checked ~ span:nth-last-child(2){ transform: rotate(-45deg) translate(0, -1px);}
+#menudt{position: absolute;width: 300px;height: 800px;box-shadow: 0 0 10px #85888C;margin: -50px 0 0 -50px;padding: 50px;
+  padding-top: 75px;background-color: #00F;-webkit-font-smoothing: antialiased;transform-origin: 0% 0%;
+  transform: translate(-100%, 0);transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);}
+#menudt li {padding: 10px 0;transition-delay: 2s;}
+#menuToggle input:checked ~ ul{transform: none;}
+</style>      <!--cố định menu ngang--> <div id="andong1"><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+   <div class="noidung">
+  	<div id="tieude3">
+    <p style="font-size:20px;">Hướng dẫn cài đặt</p></div><!--end tieude-->
+         
+  	<div id="left1"><p style="color:#F00">Xem camera đầu ghi hình dahua</p>
+            <iframe width="100%" height="190" src="https://www.youtube.com/embed/E2lfSlJC6mY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end left-->
+           <div id="center1"><p style="color:#F00">Gắn camera vào đầu ghi KB.Vision</p>
+          <iframe width="100%" height="190" src="https://www.youtube.com/embed/_9Rmk6ACL-U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end center-->
+            <div id="right1"><p style="color:#F00">Xem camera đầu ghi hình KB.Vision</p>
+            <iframe width="100%" height="190" src="https://www.youtube.com/embed/kgM8TX2fXQM?list=PLP1kH6kE7Eq_TAC4qRyUYW4auJAaUq7tF" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end right-->
+            <div id="left1"><p style="color:#F00">Cài HĐH Ubuntu</p>
+            <iframe width="100%" height="190" src="https://www.youtube.com/embed/vi2vZHulQ3g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end left-->
+           <div id="center1"><p style="color:#F00">Cài corel x7</p>
+           <iframe width="100%" height="190" src="https://www.youtube.com/embed/ybpDfoKHvqA?list=PLP1kH6kE7Eq84SVI134XSJBNaRnUh54ls" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end center-->
+            <div id="right1"><p style="color:#F00">Ghost win 10 chuẩn uefi-gpt</p>
+            <iframe width="100%" height="190" src="https://www.youtube.com/embed/XBahNedLINQ?list=PLP1kH6kE7Eq84SVI134XSJBNaRnUh54ls" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end right-->
+             <div id="left1"><p style="color:#F00">Cài win 10 chuẩn uefi bằng USB</p>
+            <iframe width="100%" height="190" src="https://www.youtube.com/embed/3ARmjoW5X2g?list=PLP1kH6kE7Eq84SVI134XSJBNaRnUh54ls" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end left-->
+           <div id="center1"><p style="color:#F00">Tạo boot usb bằng refus 2.xxxx</p>
+           <iframe width="100%" height="190" src="https://www.youtube.com/embed/1AQB9e7xkOM?list=PLP1kH6kE7Eq84SVI134XSJBNaRnUh54ls" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end center-->
+            <div id="right1"><p style="color:#F00">Cài đặt Autocad 2007</p>
+            <iframe width="100%" height="190" src="https://www.youtube.com/embed/-RdiTxD_i00?list=PLP1kH6kE7Eq84SVI134XSJBNaRnUh54ls" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end right-->
+            <div id="left1"><p style="color:#F00">Quét bad sector ổ cứng</p>
+           <iframe width="100%" height="190" src="https://www.youtube.com/embed/vzj73QcaAJ4?list=PLP1kH6kE7Eq84SVI134XSJBNaRnUh54ls" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end left-->
+           <div id="center1"><p style="color:#F00">Easeus data recovery wizard phục hồi dữ liệu</p>
+          <iframe width="100%" height="190" src="https://www.youtube.com/embed/1awAItxnDHs?list=PLP1kH6kE7Eq84SVI134XSJBNaRnUh54ls" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end center-->
+          <div id="right1"><p style="color:#F00">Xem Camera đầu ghi hình Dahua</p>
+            <iframe width="100%" height="190" src="https://www.youtube.com/embed/E2lfSlJC6mY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end right-->
+             <div id="left1"><p style="color:#F00">Ẩn wifi ToTo-Link</p>
+           <iframe width="100%" height="190" src=" https://www.youtube.com/embed/q2FWw0YMPJ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end left-->
+           <div id="center1"><p style="color:#F00">Xem mật khẩu wifi bằng lệnh CMD</p>
+          <iframe width="100%" height="190" src="https://www.youtube.com/embed/LoAJGor6Ylg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end center-->
+          <div id="right1"><p style="color:#F00"> Thêm Camera KBVision trên máy tính</p>
+            <iframe width="100%" height="190" src="https://www.youtube.com/embed/luDZqigmr9Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end right-->
+            <div id="left1"><p style="color:#F00">Xem Camera KBVision trên máy tính</p>
+           <iframe width="100%" height="190" src="https://www.youtube.com/embed/zfvIaYYrJfs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end left-->
+           <div id="center1"><p style="color:#F00">Cài phần mềm AI 2018</p>
+          <iframe width="100%" height="190" src="https://www.youtube.com/embed/q9ckr7TOVVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end center-->
+          <div id="right1"><p style="color:#F00"> Tạo nút Shutdown, reset ngoài desktop</p>
+            <iframe width="100%" height="190" src="https://www.youtube.com/embed/UY29wDc3uJM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end right-->
+             <div id="left1"><p style="color:#F00">Phím Tắt cơ bản với phín Windows</p>
+           <iframe width="100%" height="190" src="https://www.youtube.com/embed/Vsh93ZNm-wo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end left-->
+           <div id="center1"><p style="color:#F00">Cắt, chuyển file pdf sang ảnh</p>
+          <iframe width="100%" height="190" src="https://www.youtube.com/embed/L7CF5YfH_RY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end center-->
+          <div id="right1"><p style="color:#F00">Dreamweaver tạo menu trong html</p>
+            <iframe width="100%" height="190" src="https://www.youtube.com/embed/-OpUGYk-pFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end right-->
+             <div id="left1"><p style="color:#F00">Dreamweaver tạo menu responsive</p>
+           <iframe width="100%" height="190" src="https://www.youtube.com/embed/S-xskf86POc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end left-->
+           <div id="center1"><p style="color:#F00">Dreamweaver tạo nút tìm kiếm co giãn</p>
+          <iframe width="100%" height="190" src="https://www.youtube.com/embed/e-9uXvdZuPw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end center-->
+          <div id="right1"><p style="color:#F00">Dreamweaver tạo chạy chữ trong html (P1)</p>
+            <iframe width="100%" height="190" src="https://www.youtube.com/embed/-u5CcbKAZXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end right-->
+             <div id="left1"><p style="color:#F00">Dreamweaver tạo chạy chữ trong html (P2)</p>
+           <iframe width="100%" height="190" src="https://www.youtube.com/embed/xqxkeGMIIek" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end left-->
+           <div id="center1"><p style="color:#F00">Dreamweaver phóng to ảnh trong html</p>
+          <iframe width="100%" height="190" src="https://www.youtube.com/embed/_mAfI19QUsA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end center-->
+          <div id="right1"><p style="color:#F00">Dreamweaver hiệu ứng khi hover (P1)</p>
+            <iframe width="100%" height="190" src="https://www.youtube.com/embed/6fLqKL2d3wg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end right-->
+             <div id="left1"><p style="color:#F00">Dreamweaver hiệu ứng khi hover (P2)</p>
+           <iframe width="100%" height="190" src="https://www.youtube.com/embed/vL_PscReC2Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end left-->
+           <div id="center1"><p style="color:#F00">Dreamweaver hiệu ứng khi hover (P3)</p>
+          <iframe width="100%" height="190" src="https://www.youtube.com/embed/vgBOMWxCk-w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end center-->
+          <div id="right1"><p style="color:#F00">Dreamweaver hiệu ứng khi hover (P4)</p>
+            <iframe width="100%" height="190" src="https://www.youtube.com/embed/zwPBSkSN0xs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><!--end right-->
+            
+            
+           
+          <div id="tieude3">
+    <p>Download phần mềm</p>
+    </div><!--end tieude-->
+  	<div id="left1"><p style="color:#00F">KBiVMS:quản lý đầu ghi KB.vision</p> Phần mềm quản lý camera trên máy tính, quản lý các thiết bị DVR, NVR, IPC, VDP, Alarm bằng chế độ P2P (Serial Number), tên miền DDNS (Kbvision.tv, dyndns, NoIP…..)- Các tính năng Snapshot, E-PTZ, Audio, Record, Talk, Instant playback, Tour task, View, Fisheye image correcton, IVS, Stream control, Optonal video scale, Smart track config...<a href="https://drive.google.com/file/d/1N2RJAULck_HcP62g8ZC7EugM3x7mGNNu/view?usp=sharing" style="color:#F00">tại đây</a>
+    </div><!--end left-->
+           <div id="center1"><p style="color:#00F">Smart PSS:quản lý đầu ghi dahua</p>Smart PSS là tiện ích xem camera được phát triển bởi hãng công nghệ nổi tiếng DAHUA. Với sự trợ giúp của Smart PSS bạn có thể xem được các cảnh quay từ camera của bạn bằng Dahua Tachnology trong thời gian thực hoặc kiểm tra các video đã quay. Công cụ này còn hỗ trợ cả bản đồ điện tử để người dùng biết chính xác vị trí đặt mỗi camera...<a href="https://drive.google.com/file/d/1LSXWfGJJOM2giwsDFytNwotryJQqWBkm/view?usp=sharing" style="color:#F00">tại đây</a>
+           </div><!--end center-->
+            <div id="right1"><p style="color:#00F">Corel X8</p>Phần mềm thiết kế corel x8 <a href="https://drive.google.com/file/d/1HPDR6e0TVBTABLTuvPzv-SMfCMZeHsPO/view?usp=sharing" style="color:#F00">tại đây</a>
+            </div><!--end right-->
+            <div id="left1">Đang cập nhật...</div><!--end left-->
+           <div id="center1">Đang cập nhật...
+           
+           </div><!--end center-->
+          <div id="right1">Đang cập nhật...
+            </div><!--end right
+  </div><!--end noidung-->    	<!--end noidung-->    	
+ 
+     <!--footer-->
+         <style type="text/css">
+	 					 @media only screen and (max-width: 768px){ #footer1 { padding-top:10px;} }
+	 				#footer1{width: 90%; margin-left: 5%; margin-top: 10px; font-size:20px; color:#3f9;}
+					#footer2{}
+					#footer3{ background:#FFF; width: 90%; margin-left: 5%; border-radius: 3px }
+					#footer3 ul li:hover{ color:#F00}
+					#footer3 a{ color:#00F; text-decoration:none; text-align:left;}
+					#footer3 a:hover{ color:#F00}
+	 				  </style>
+            <div id="leftfooter">
+            	<div id="footer1"> GIỚI THIỆU
+                </div>
+                <div id="footer2"><hr  width="100%" color="#3f9" align="center" />
+                </div>
+                <div id="footer3">
+                	 <ul style="list-style-type:none; padding:0px;  color:#00F">
+                          <li>
+                        <a href="index.html" target="_self" title="MK Computer">CTY TNHH MTV Tư Vấn Tin Học Minh Khải</a>
+                        </li>
+                          <li>
+                        Địa chỉ: Xã Trung Thành, Huyện Vũng Liêm, Tỉnh Vĩnh Long
+                        </li>
+                      </ul>
+                </div>       
+           </div><!--end leftfooter-->
+           <div id="centerfooter">
+           		<div id="footer1"> LIÊN HỆ ĐẶT HÀNG
+                </div>
+                <div id="footer2"><hr  width="100%" color="#3f9" align="center" />
+                </div>
+                <div id="footer3">
+                	 <ul style="list-style-type:none; text-align: justify; margin-left: 1%; padding: 1%; font-size:15.5px; color:#00F">
+                        <li>
+                   Chuyên cung cấp máy tính, máy in, lắp đặt hệ thống camera quan sát. Quý khách vui lòng liên hệ để được tư vấn
+                        </li>
+                         <li>
+                        <a href="tel:0985 654 786" style="font-size: 20px; color:red">ĐT: 0985 654 786</a>
+                        </li>
+                      </ul>
+                </div> 
+           </div><!--end centerfooter-->
+            <div id="rightfooter">
+            	<div id="footer1"> GÓP Ý
+                </div>
+                <div id="footer2"><hr  width="100%" color="#3f9" align="center" />
+                </div>
+                <div id="footer3">
+                	 <ul style="list-style-type:none; text-align:left; margin-left: 1%; padding:1%; font-size:16px;  color:#00F">
+                        <li>
+                        Mọi thông tin góp ý quý khách vui lòng gửi email về địa chỉ:
+                        </li>
+                         <li style="font-size:18px">
+                        <a href="mailto:ctytnhhminhkhai@gmail.com">ctytnhhminhkhai@gmail.com</a>
+                        </li>
+                      </ul>
+                </div> 
+            </div><!--end rightfooter-->
+            <div id="tieudefooter">
+   Copyright &#169; <a href="index.html" target="_self"  style="text-decoration:none" title="MK Computer"> MK Computer </a>  - Editor by <a href='index.html' style="text-decoration:none" target='_self' title='MK Computer'>MK Computer</a>
+    </div><!--end tieudefooter-->          	
+      <!--end footer-->       
+      </div><!--end main-->
+      
+        
+   </div><!--end LayoutDiv1-->
+</div> <!--end gridContainer clearfix-->
+
+    
+</body>
+ <script> <!-- chạy hình đầu trang-->
+      //khai báo biến slideIndex đại diện cho slide hiện tại
+      var slideIndex;
+      // KHai bào hàm hiển thị slide
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+		  slides[slideIndex].style.display = "block";  
+          dots[slideIndex].className += " active";
+          //chuyển đến slide tiếp theo
+          slideIndex++;
+          //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+          if (slideIndex > slides.length - 1) {
+            slideIndex = 0
+          }    //tự động chuyển đổi slide sau 5s
+          setTimeout(showSlides, 5000);
+      }  //mặc định hiển thị slide đầu tiên 
+      showSlides(slideIndex = 0);
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+    </script> <!-- chạy hình đầu trang--> 
+</html>

@@ -30,7 +30,55 @@ Do the following if you're using your customized build of modernizr (http://www.
 -->
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+<![endif]--><!-- xem thêm-->
+	<style type="text/css">
+	.hidden-content {
+            overflow: hidden;
+            line-height: 1.5em;
+            height: 4.5em;
+        }
+.show-more {
+    display: block;
+    cursor: pointer;
+    color: #fbae37;
+    text-decoration: underline;
+    border-color: #fbae37;
+    border: 1px solid #fbae37;
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 150px;
+    padding: 5px 5px;
+    text-align: center;
+}
+.hidden-content {
+    margin-bottom: 10px;
+}
+	</style><!-- end xem thêm-->
+	
+	<![endif]--><!-- xem thêm 1-->
+	<style type="text/css">
+	.hidden-content1 {
+            overflow: hidden;
+            line-height: 1.5em;
+            height: 4.5em;
+        }
+.show-more1 {
+    display: block;
+    cursor: pointer;
+    color: #fbae37;
+    text-decoration: underline;
+    border-color: #fbae37;
+    border: 1px solid #fbae37;
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 150px;
+    padding: 5px 5px;
+    text-align: center;
+}
+.hidden-content1 {
+    margin-bottom: 10px;
+}
+	</style><!-- end xem thêm 1-->
 <style>
 body{
 	background: #b5e6fa;	margin: 0;padding: 0;color: #444;font-family: 'Noto Sans', sans-serif;font-size: 15px;text-align: center;
@@ -1010,6 +1058,7 @@ ul {padding: 0; list-style-type: none;}
            <div id="giaohang">
     <p style="background:#09c; color:#BAFF1E; font-size:25px; line-height:1.5 " class="w3-btn" onclick="ScrollTo('giaohang')">Phương thức giao nhận hàng</p>
 </div>
+	  <div id="hiddenContent" class="hidden-content">
 		  <p style="color:#00C; font-size:18px; text-align:justify;line-height:1.5; padding:0 5px;">
             <a style=" font-weight: bold; color:#f00; text-decoration:none; font-size:18px">
 A. Vận chuyển và giao nhận</a><br>
@@ -1029,12 +1078,13 @@ Công ty chúng tôi nhận giao hàng tận nhà cho khách hàng ở các khu 
 &nbsp;- Trường hợp khách hàng tự lắp đặt: Khách hàng tự chịu trách nhiệm về kỹ thuật lắp đặt cũng như mọi rủi ro liên quan đến quá trình lắp đặt sản phẩm
 </p>
   
-          
+     </div>
+	  <span id="showMoreLink" class="show-more" onclick="toggleContent()">Xem thêm</span>     
 	  
 	   <div id="thanhtoan">
     <p style="background:#09c; color:#BAFF1E; font-size:25px; line-height:1.5 " class="w3-btn" onclick="ScrollTo('thanhtoan')">Hình thức thanh toán</p>
 </div>
-		
+		<div id="hiddenContent1" class="hidden-content1">
 	  		
 	  <p style="color:#00C; font-size:18px; text-align:justify;line-height:1.5; padding:0 5px;">
             <a style=" font-weight: bold; color:#f00; text-decoration:none; font-size:18px">Quý khách có thể thanh toán bằng các hình thức sau<br>
@@ -1042,6 +1092,8 @@ Công ty chúng tôi nhận giao hàng tận nhà cho khách hàng ở các khu 
 Áp dụng với khách hàng mua hàng trực tiếp tại nhà máy hoặc chọn hàng trực tiếp trên website<br>
 &nbsp;- Khách hàng không có thời gian tới công ty có thể đặt hàng qua điện thoại: 0270.3989.239 đặt cọc, nhận hàng hóa và thanh toán đủ tại nơi giao hàng.<br>
 &nbsp;- Quý khách hàng tới công ty của chúng tôi, xem hàng, đặt cọc, nhận hàng hóa và thanh toán đủ tại công trình.<br>
+		  
+		  
 &nbsp;- Quý khách đặt hàng theo đúng mã số hàng hóa, chúng tôi sẽ phục vụ tận nhà và nhận tiền mặt ngay sau khi giao hàng.<br>
  &nbsp;&nbsp;+ Nếu hàng không đúng chất lượng và mẫu mã khách hàng có quyền từ chối nhận hàng và không có điều kiện nào kèm theo.<br>
  &nbsp;&nbsp;+ Nếu hàng hóa đúng chất lượng, đúng mẫu mã nhưng vì 1 lý do nào đó. Ví dụ như chỗ để không vừa, người nhà đã mua trước đó rồi mà không biết hoặc đổi ý định lấy mẫu mã khác, quý khách vui lòng hỗ trợ tiền vận chuyển cho nhân viên của công ty.<br>
@@ -1061,8 +1113,10 @@ CÔNG TY TNHH MTV XD SƠN TRUNG THÀNH</a><br>
 Người ĐDPL: Đặng Thanh Sơn<br>
 Giấy phép kinh doanh: 1500756036<br>
 Điện thoại: 0270.3989.239-0939.799.239<br>
+	  
 </p>
-
+</div>
+	  <span id="showMoreLink1" class="show-more1" onclick="toggleContent1()">Xem thêm</span>
            
            
            
@@ -1268,8 +1322,36 @@ hs.src = ('//s10.histats.com/js15_as.js');
         
    </div><!--end LayoutDiv1-->
 </div> <!--end gridContainer clearfix-->
-
-    
+<!-- xem thêm-->
+<script>
+    function toggleContent() {
+        var hiddenContent = document.getElementById("hiddenContent");
+        var showMoreLink = document.getElementById("showMoreLink");
+ 
+        if (hiddenContent.style.height === "auto") {
+            hiddenContent.style.height = "4.5em";
+            showMoreLink.innerHTML = "Xem thêm";
+        } else {
+            hiddenContent.style.height = "auto";
+            showMoreLink.innerHTML = "Rút gọn";
+        }
+    }
+</script><!-- end xem thêm-->
+    <!-- xem thêm-->
+<script>
+    function toggleContent1() {
+        var hiddenContent1 = document.getElementById("hiddenContent1");
+        var showMoreLink1 = document.getElementById("showMoreLink1");
+ 
+        if (hiddenContent1.style.height === "auto") {
+            hiddenContent1.style.height = "4.5em";
+            showMoreLink1.innerHTML = "Xem thêm";
+        } else {
+            hiddenContent1.style.height = "auto";
+            showMoreLink1.innerHTML = "Rút gọn";
+        }
+    }
+</script><!-- end xem thêm-->
 </body>
  <script> <!-- chạy hình đầu trang-->
       //khai báo biến slideIndex đại diện cho slide hiện tại

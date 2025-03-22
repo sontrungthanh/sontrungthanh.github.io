@@ -62,6 +62,17 @@ input::-webkit-input-placeholder {    color: #999;}
 .logo{margin-top: 10px;}
 <!--end logo-->
 </style>
+	 <!--thanh toán-->
+		  <style type="text/css">
+		  
+		  #thanhtoan button.w3-btn:hover {  background: #0B32AF;  color: #DAF70B;}
+		  #baohanh button.w3-btn:hover {  background: #0B32AF;  color: #DAF70B;}
+		  #hoantien button.w3-btn:hover {  background: #0B32AF;  color: #DAF70B;}
+		  #giaohang button.w3-btn:hover {  background: #0B32AF;  color: #DAF70B;}
+		  #thongtinsh button.w3-btn:hover {  background: #0B32AF;  color: #DAF70B;}
+		  #thongtinbm button.w3-btn:hover {  background: #0B32AF;  color: #DAF70B;}
+		  #huongdan button.w3-btn:hover {  background: #0B32AF;  color: #DAF70B;}
+		  </style>
 <style>
 .left{background: #FFF;height: 100px;float: left;width: 20%;position:relative; }
 .right{background: #FFF;height: 100px;float: right;width: 80%;}
@@ -265,7 +276,7 @@ background-color: rgba(230, 8, 8, 0.7);border-radius: 100%;border: 2px solid tra
             #right1{height: 320px;background: #fff; margin-top:0.5%;float: right;width: 33%;	}
 			#leftfooter{background: #06F;height: 170px;margin-top: 0.5%;float: left;width: 33%;position:relative;}
 			#centerfooter { background:#06f; margin-top: 0.5%;float:left; margin-left: 0.5%;width: 33%;}
-            #rightfooter{height: 170px;background: #06f; margin-top:0.5%;float: right;width: 33%;	}
+            #rightfooter{background: #06f; margin-top:0.5%;float: right;width: 33%;	}
 			#tieude{ width: 100%; height: 50px; background:#39F; color: #0F0; margin-top: 0.5%;}
 			#tieude2{height: 50px; width: 100%; color:#0f0; background:#39f; float:left;  margin-top: 0.5%;}
 			#tieude3{height: 50px; font-size: 20px; width: 100%; color:#0f0; background:#39f; float:left;  margin-top: 0.5%;}
@@ -282,7 +293,7 @@ top: 5px;} span#btn-nextx{
 top: 5px;} span#btn-nextd{
 top: 5px;} span#btn-nextv{
 top: 5px;}
-						.tabscontent { height:470px;}
+						.tabscontent { height:427px;}
 			#tabbs { float:left; margin-top:-36px; width:66.5%;}
 			#andong1{ display:none} #andong{display:none;}}
              @media only screen and (max-width: 768px){
@@ -297,7 +308,7 @@ top: 1918px;}
 		span#btn-nextv{
 top: 1918px;}
 		
-		.tabscontent{ height:840px;}
+		.tabscontent{ height:650px;}
 		#tabbs {float:none; margin-top:0;width:100%}
 		#thongso { float:none}
 		#tieude33 { display:none}
@@ -638,6 +649,19 @@ function ScrollToResolver(elem) {
 
  </ul>
                 </li>
+		 
+		 <li><a rel="hang" class="button hang">&nbsp;Dịch vụ &rsaquo;&nbsp;</a>
+                  <ul class="sub-menu">
+                     <li>   <a href="index.html#gachtuchen" rel="hang" class="button hang">
+    <button style="background:#3fc; width:100%; color:#F00; line-height:36px" class="w3-btn" onclick="ScrollTo('tab-5')">Hút hầm cầu</button>
+</a></li>
+           <li> <a href="index.html#tabnoidung"rel="hang" class="button hang">
+    <button style="background:#3fc; width:100%; color:#F00; line-height:36px" class="w3-btn" onclick="ScrollTo('tab-6')">Trạm cân 80 tấn</button>
+</a></li>
+
+                     </ul>
+                </li>
+		 
               <li><a href="lienhe.html" rel="hang" class="button hang">&nbsp;Liên hệ&nbsp;</a></li>
        <li><a href="https://zalo.me/0939799239" rel="hang" class="button hang" target="_blank" title="Chat Zalo">&nbsp;<img alt="" src="../MK/images/zalo1.jpg" style="width:30px; height:30px; background:#FFF;">&nbsp;</a></li>
        <li><a href="mailto:ctysontrungthanh@yahoo.com.vn" rel="hang" class="button hang" target="_blank" title="Gửi Email">&nbsp;<img src="../MK/images/email.jpg" style="width:30px; height:30px;">&nbsp;</a></li>
@@ -2298,6 +2322,12 @@ ul {padding: 0; list-style-type: none;}
       
     <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
     <label for="tab-4" class="tab-label-4">Xe cuốc</label>
+	
+	<input id="tab-5" type="radio" name="radio-set" class="tab-selector-5" />
+    <label for="tab-5" class="tab-label-5">Hút hầm cầu</label>
+	  
+	<input id="tab-6" type="radio" name="radio-set" class="tab-selector-6" />
+    <label for="tab-6" class="tab-label-6">Trạm cân 80 tấn</label>
               
     <div class="clear-shadow"></div>
                   
@@ -2339,6 +2369,27 @@ ul {padding: 0; list-style-type: none;}
         
         
         </div>
+		<div class="content-5">
+			<a href="gachhoathi.html" title="Hút hầm cầu">
+            <img src="images/xecuoc.jpg"  style=" float:none; margin-right:20px;">
+
+                        <p style="font-size:19px; text-align:justify; color:#00F">Hút hầm cầu</p> </a>
+					<p style="font-size:22px; color:#f00">Liên hệ: 0907.622.729 - 0270.3989.239</p>
+        <a href="gachhoathi.html" title="Hút hầm cầu" style="color: darkblue">Xem chi tiết</a>
+        
+        </div>
+		
+		<div class="content-6">
+        <a href="gachhoathi.html" title="Trạm cân">
+            <img src="images/xecuoc.jpg"  style=" float:none; margin-right:20px;">
+
+                        <p style="font-size:19px; text-align:justify; color:#00F">Trạm cân 80 tấn</p> </a>
+					<p style="font-size:22px; color:#f00">Liên hệ: 0907.622.729 - 0270.3989.239</p>
+        <a href="gachhoathi.html" title="Trạm cân" style="color: darkblue">Xem chi tiết</a>
+        
+        
+        </div>
+		
     </div>
 </section>
 </div> <!--end tabbs-->
@@ -2355,7 +2406,9 @@ ul {padding: 0; list-style-type: none;}
        </div><!--end right--> 
           
 <div id="right" style="height:183px">
-        <p style="color:#00F; background:#0F0; line-height:2.8; margin-top:0;">Thống kê truy cập</p><!--CHẠY GẠCH NHỎ--><!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
+        <p style="color:#00F; background:#0F0; line-height:2.8; margin-top:0;">Thống kê truy cập</p><!--CHẠY GẠCH NHỎ-->
+	<!-- Histats.com  (div with counter) -->
+	<div id="histats_counter"></div>
 <!-- Histats.com  START  (aync)-->
 <script type="text/javascript">var _Hasync= _Hasync|| [];
 _Hasync.push(['Histats.start', '1,4421781,4,403,118,80,00011110']);
@@ -2412,6 +2465,19 @@ hs.src = ('//s10.histats.com/js15_as.js');
                          <li>
                         <a href="tel:0939799239" style="font-size: 20px; color:red">ĐT: 0939 799 239</a>
                         </li>
+						 
+						 <div id="thanhtoan"style="width:100%; line-height:1.5; background:#36C"><a href="lienhe.html#thanhtoan">
+    <button style=" width:100%;  line-height:1.5" class="w3-btn" onclick="ScrollTo('thanhtoan')">Hình thức thanh toán</button></a>
+</div>
+<div id="baohanh"style="width:100%; line-height:1.5; background:#36C">
+	<a href="../lienhe.html#baohanh">
+    <button style=" width:100%;  line-height:1.5" class="w3-btn" onclick="ScrollTo('baohanh')">Chính sách bảo hành</button></a>
+</div>
+<div id="hoantien" style="width:100%; line-height:1.5; background:#36C">
+	<a href="../lienhe.html#hoantien">
+    <button style=" width:100%; line-height:1.5" class="w3-btn" onclick="ScrollTo('hoantien')">Chính sách hoàn tiền đổi trả hàng</button></a>
+</div>
+						 
                       </ul>
                 </div> 
            </div><!--end centerfooter-->
@@ -2428,6 +2494,19 @@ hs.src = ('//s10.histats.com/js15_as.js');
                          <li style="font-size:18px">
                         <a href="mailto:ctysontrungthanh@yahoo.com.vn">ctysontrungthanh@yahoo.com.vn</a>
                         </li>
+						 
+						 <div id="giaohang"style="width:100%; line-height:1.5; background:#36C"><a href="lienhe.html#giaohang">
+    <button style=" width:100%;  line-height:1.5" class="w3-btn" onclick="ScrollTo('giaohang')">Phương thức giao nhận hàng</button></a>
+</div>
+<div id="thongtinsh"style="width:100%; line-height:1.5; background:#36C">
+	<a href="../lienhe.html#thongtinsh">
+    <button style=" width:100%;  line-height:1.5" class="w3-btn" onclick="ScrollTo('thongtinsh')">Thông tin chủ sở hữu Website</button></a>
+</div>
+<div id="thongtinbm" style="width:100%; line-height:1.5; background:#36C">
+	<a href="../lienhe.html#thongtinbm">
+    <button style=" width:100%;  line-height:1.5" class="w3-btn" onclick="ScrollTo('thongtinbm')">Thông tin bảo mật</button></a>
+</div>
+						 
                       </ul>
                 </div> 
             </div><!--end rightfooter-->

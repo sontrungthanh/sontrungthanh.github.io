@@ -103,7 +103,7 @@ img, object, embed, video {
 	display: block;
 }
 }
-@media only screen and (min-width: 768px){.tabscontent { height:470px;}
+@media only screen and (min-width: 768px){.tabscontent { height:427px;}
 			#tabbs { float:left; margin-top:-36px; width:66.5%;}
 			#thongso { float:left}
 			}
@@ -114,7 +114,7 @@ img, object, embed, video {
 						#footer3 ul li:hover{ color:#F00}
 						#footer3 a{ color:#00F; text-decoration:none; text-align:left;}
 						#footer3 a:hover{ color:#F00}
-.tabscontent{ height:840px;}
+.tabscontent{ height:650px;}
 		#tabbs {float:none; margin-top:0;width:100%}
 		#thongso { float:none}
 		#thongso { width:100%; height:auto;
@@ -146,7 +146,12 @@ img, object, embed, video {
 #tabb input#tab-4{
   left: 200px;
 }
-
+#tabb input#tab-5{
+  left: 250px;
+}
+#tabb input#tab-6{
+  left: 300px;
+}
 #tabb label {
   background: #06f;
   background: -moz-linear-gradient(top, #06f 0%, #fff 100%);
@@ -188,19 +193,26 @@ img, object, embed, video {
 }
 
 #tabb label:first-of-type {
-    z-index: 4;
+    z-index: 6;
     box-shadow: 2px 0 2px rgba(0,0,0,0.1);
 }
 
 .tab-label-2 {
-    z-index: 3;
+    z-index: 5;
 }
 
 .tab-label-3 {
-    z-index: 2;
+    z-index: 4;
 }
 
 .tab-label-4 {
+    z-index: 3;
+}
+
+.tab-label-5 {
+    z-index: 2;
+}
+.tab-label-6 {
     z-index: 1;
 }
 
@@ -239,7 +251,9 @@ img, object, embed, video {
 #tabb input.tab-selector-1:checked ~ .tabscontent .content-1,
 #tabb input.tab-selector-2:checked ~ .tabscontent .content-2,
 #tabb input.tab-selector-3:checked ~ .tabscontent .content-3,
-#tabb input.tab-selector-4:checked ~ .tabscontent .content-4 {
+#tabb input.tab-selector-4:checked ~ .tabscontent .content-4,
+#tabb input.tab-selector-5:checked ~ .tabscontent .content-5,
+#tabb input.tab-selector-6:checked ~ .tabscontent .content-6{
   z-index: 100;
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);

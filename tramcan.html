@@ -83,6 +83,30 @@ Do the following if you're using your customized build of modernizr (http://www.
     margin-bottom: 10px;
 }
 	</style><!-- end xem thêm 1-->
+	
+	<style type="text/css">
+	.hidden-content2 {
+            overflow: hidden;
+            line-height: 1.5em;
+            height: 4.5em;
+        }
+.show-more2 {
+    display: block;
+    cursor: pointer;
+    color: #fbae37;
+    text-decoration: underline;
+    border-color: #fbae37;
+    border: 1px solid #fbae37;
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 150px;
+    padding: 5px 5px;
+    text-align: center;
+}
+.hidden-content2 {
+    margin-bottom: 10px;
+}
+	</style><!-- end xem thêm 1-->
 <style>
 body{
 	background: #b5e6fa;	margin: 0;padding: 0;color: #444;font-family: 'Noto Sans', sans-serif;font-size: 15px;text-align: center;
@@ -457,7 +481,7 @@ transform:0.9s;}
                         <div class="m2"></div>
                         <div class="m3"></div>
                         <div class="m4">
-<li>   <a href="file:///D|/Soft/index.html"rel="hang" class="button hang">
+<li>   <a href="../index.html"rel="hang" class="button hang">
     <button style="background:#3fc; width:100%; color:#F00; line-height:36px" class="w3-btn" onclick="ScrollTo('')">Trang chủ</button>
 </a></li>
                       <li>   <a href="dichvu.html" rel="hang" class="button hang">
@@ -1305,6 +1329,21 @@ hs.src = ('//s10.histats.com/js15_as.js');
         } else {
             hiddenContent1.style.height = "auto";
             showMoreLink1.innerHTML = "Rút gọn";
+        }
+    }
+</script><!-- end xem thêm-->
+	<!-- xem thêm-->
+<script>
+    function toggleContent2() {
+        var hiddenContent2 = document.getElementById("hiddenContent2");
+        var showMoreLink2 = document.getElementById("showMoreLink2");
+ 
+        if (hiddenContent2.style.height === "auto") {
+            hiddenContent2.style.height = "4.5em";
+            showMoreLink2.innerHTML = "Xem thêm";
+        } else {
+            hiddenContent2.style.height = "auto";
+            showMoreLink2.innerHTML = "Rút gọn";
         }
     }
 </script><!-- end xem thêm-->
